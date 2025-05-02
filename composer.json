@@ -1,0 +1,34 @@
+{
+    "name": "chaos613/ups-void",
+    "description": "A Laravel package to void UPS packages using the modern REST API.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "chaos613\\UpsVoid\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reno Tomasi",
+            "email": "reno.tomasi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "chaos613\\UpsVoid\\UpsVoidServiceProvider"
+            ],
+            "aliases": {
+                "UpsVoid": "chaos613\\UpsVoid\\Facades\\UpsVoid"
+            }
+        }
+    }
+}
+

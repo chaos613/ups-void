@@ -23,10 +23,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "chaos613\\UpsVoid\\UpsVoidServiceProvider"
+                "chaos613\\UpsVoid\\UpsVoidServiceProvider" // Ensure this matches
             ],
             "aliases": {
-                "UpsVoid": "chaos613\\UpsVoid\\Facades\\UpsVoid"
+                "UpsVoid": "chaos613\\UpsVoid\\Facades\\UpsVoid" // Ensure this matches
             }
         }
     }

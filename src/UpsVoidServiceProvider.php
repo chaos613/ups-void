@@ -1,9 +1,9 @@
 <?php
 
-namespace chaos613\UpsVoid;
+namespace chaos613\UpsVoid; // Updated namespace
 
 use Illuminate\Support\ServiceProvider;
-use YourVendorName\UpsVoid\Http\Clients\UpsClient;
+use chaos613\UpsVoid\Http\Clients\UpsClient; // Updated use statement
 
 class UpsVoidServiceProvider extends ServiceProvider
 {
@@ -26,7 +26,7 @@ class UpsVoidServiceProvider extends ServiceProvider
             $httpClient = new \GuzzleHttp\Client(['base_uri' => $config['base_uri']]);
 
             // Create and return the UpsClient instance
-            return new UpsClient($httpClient, $config);
+            return new UpsClient($httpClient, $config); // Using the class via its use statement
         });
 
         // Register the UpsVoid alias
